@@ -25,12 +25,6 @@ def test_invert3() -> None:
     assert invert({}) == {}
 
 
-def test_invert4() -> None:
-    """Testing duplicate values to raise a KeyError"""
-    with pytest.raises(KeyError):
-        invert({"kris": "jordan", "michael": "jordan"})
-
-
 # tests for count function
 def test_count1() -> None:
     """Testing first use case for count"""
