@@ -2,19 +2,12 @@
 
 __author__: str = "730678501"
 
-<<<<<<< HEAD
-from exercises.ex03.dictionary import invert, count, favorite_color, bin_len
-
-
-# tests for invert function
-def test_invert1() -> None:
-=======
 from dictionary import invert, count, favorite_color, bin_len
+import pytest
 
 
 # tests for invert function
 def test_invert() -> None:
->>>>>>> b5c1c83048585226f23377b8afc69a1baec8a3fa
     """Testing first use case for invert"""
     assert invert({"a": "z", "b": "y", "c": "x"}) == {"z": "a", "y": "b", "x": "c"}
 
@@ -33,10 +26,6 @@ def test_invert3() -> None:
     assert invert({}) == {}
 
 
-<<<<<<< HEAD
-# tests for count function
-def test_count1() -> None:
-=======
 def test_invert4() -> None:
     """Testing duplicate values to raise a KeyError"""
     with pytest.raises(KeyError):
@@ -45,7 +34,6 @@ def test_invert4() -> None:
 
 # tests for count function
 def test_count() -> None:
->>>>>>> b5c1c83048585226f23377b8afc69a1baec8a3fa
     """Testing first use case for count"""
     assert count(["apple", "banana", "apple", "orange", "banana", "apple"]) == {
         "apple": 3,
@@ -65,11 +53,7 @@ def test_count3() -> None:
 
 
 # tests for favorite_color function
-<<<<<<< HEAD
-def test_favorite_color1() -> None:
-=======
 def test_favorite_color() -> None:
->>>>>>> b5c1c83048585226f23377b8afc69a1baec8a3fa
     """Testing first use case for favorite_color"""
     assignments = {"Amber": "pink", "Olivia": "blue", "Tayla": "pink", "Niki": "red"}
     assert favorite_color(assignments) == "pink"
@@ -95,11 +79,7 @@ def test_favorite_color3() -> None:
 
 
 # tests for bin_len function
-<<<<<<< HEAD
-def test_bin_len1() -> None:
-=======
 def test_bin_len() -> None:
->>>>>>> b5c1c83048585226f23377b8afc69a1baec8a3fa
     """Testing base case for bin_len"""
     assert bin_len(["the", "quick", "fox"]) == {3: {"the", "fox"}, 5: {"quick"}}
 
